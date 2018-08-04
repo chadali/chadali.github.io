@@ -94,7 +94,7 @@ a:link{
 
   .split.left {
     left:0;
-    background: url('https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center no-repeat;
+    background: url('book.jpeg') center center no-repeat;
     background-size: cover;
     z-index: 2;
   }
@@ -111,7 +111,7 @@ a:link{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+    background: url('code.png') center center no-repeat;
     background-size: cover;
     z-index: 1;
   }
@@ -126,7 +126,7 @@ a:link{
 
   .split.right {
     right:0;
-    background: url('http://aswadgroup.com/wp-content/uploads/2018/05/636311326049773956-UC.jpg') center center no-repeat;
+    background: url('construction.jpg') center center no-repeat;
     background-size: cover;
     z-index: 2;
   }
