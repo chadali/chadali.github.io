@@ -12,6 +12,8 @@
   --speed: 1000ms;
 }
 
+/* Global */
+
 html, body, #root {
   padding:0;
   margin:0;
@@ -21,32 +23,8 @@ html, body, #root {
   overflow-x: hidden;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-}
-
-.button {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  height: 2.5rem;
-  padding-top: 1.3rem;
-  width: 15rem;
-  text-align: center;
-  color: #fff;
-  border: #fff solid 0.2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  transform: translateX(-50%);
+a:link{
+  text-decoration: none!important;
 }
 
 .split.left .button:hover {
@@ -64,6 +42,194 @@ h1 {
   border-color: var(--right-button-hover-color);
 }
 
+/* Big screen */
+
+@media(min-width: 801px) {
+
+  h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    height: 2.5rem;
+    padding-top: 1.3rem;
+    width: 15rem;
+    text-align: center;
+    color: #fff;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--container-bg-color);
+  }
+
+  .split {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .split.left {
+    width: 34%;
+  }
+
+  .split.left {
+    left:0;
+    background: url('https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+
+  .split.left:before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--left-bg-color);
+  }
+
+  .split.middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .split.middle:before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--middle-bg-color);
+  }
+
+  .split.right {
+    right:0;
+    background: url('http://aswadgroup.com/wp-content/uploads/2018/05/636311326049773956-UC.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+
+  .split.right:before {
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--right-bg-color);
+  }
+
+  .split.left, .split.right, .split.middle:before, .split.middle, .split.right:before, .split.left:before {
+    transition: var(--speed) all ease-in-out;
+  }
+
+  .hover-left .left {
+    width: var(--hover-width);
+  }
+
+  .hover-left .middle {
+    width: var(--hover-width);
+  }
+
+  .hover-left .right {
+    width: var(--other-width);
+  }
+
+  .hover-left .middle:before .right:before {
+    z-index: 20;
+  }
+
+  .hover-middle .middle {
+    width: 33%;
+  }
+
+  .hover-middle .left {
+    width: 34%;
+  }
+
+  .hover-middle .right {
+    width: 33%;
+  }
+
+  .hover-middle .left:before .right:before {
+    z-index: 20;
+  }
+
+  .hover-right .right {
+    width: var(--hover-width);
+  }
+
+  .hover-right .middle {
+    width: var(--hover-width);
+  }
+
+  .hover-right .left {
+    width: var(--other-width);
+  }
+
+  .hover-right .left:before .middle:before {
+    z-index: 20;
+  }
+
+}
+
+/* Small Screen */
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: 9001;
+    /*position: absolute;
+     *     top: 50%;
+     *         left: 50%;
+     *           transform: translate(-50%, -50%);*/
+  white-space: nowrap;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  padding: 0.7rem;
+}
+
+.button {
+  display: none;
+  /*position: absolute;*/
+  /*left: 50%;
+   *     top: 40%;*/
+  /*height: 2.5rem;
+   *     padding-top: 1.3rem;
+   *         width: 15rem;
+   *             text-align: center;
+   *                 */
+  /* color: #fff;
+   *     border: #fff solid 0.2rem;
+   *         font-size: 1rem;
+   *             font-weight: bold;
+   *                 text-transform: uppercase;
+   *                     text-decoration: none;*/
+  /*
+   *     transform: translateX(-50%);*/
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -72,123 +238,117 @@ h1 {
 }
 
 .split {
-  position: absolute;
-  width: 33%;
-  height: 100%;
+  /*position: absolute;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33%;
   overflow: hidden;
 }
 
 .split.left {
-  width: 34%;
+  background: url('https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center no-repeat;
+  background-size: cover;
 }
 
-.split.left {
-  left:0;
-  background: url('book.jpeg') center center no-repeat;
-  background-size: cover;
-  z-index: 2;
-}
 
 .split.left:before {
   position:absolute;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 33%;
   background: var(--left-bg-color);
 }
 
+
 .split.middle {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: url('code.png') center center no-repeat;
+  /*
+   *     top: 50%;
+   *         left: 50%;
+   *             transform: translate(-50%, -50%);*/
+  background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
   background-size: cover;
-  z-index: 1;
 }
 
+
 .split.middle:before {
-  position:absolute;
+  position:absolute; 
   content: "";
   width: 100%;
-  height: 100%;
+  height: 33%;
   background: var(--middle-bg-color);
 }
 
+
 .split.right {
-  right:0;
-  background: url('construction.jpg') center center no-repeat;
+  background: url('http://aswadgroup.com/wp-content/uploads/2018/05/636311326049773956-UC.jpg') center center no-repeat;
   background-size: cover;
-  z-index: 2;
 }
 
 .split.right:before {
   position:absolute;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 33%;
   background: var(--right-bg-color);
 }
 
-.split.left, .split.right, .split.middle:before, .split.middle, .split.right:before, .split.left:before {
-  transition: var(--speed) all ease-in-out;
-}
+/*
+ *
+ *   .split.left, .split.right, .split.middle:before, .split.middle, .split.right:before, .split.left:before {
+ *       transition: var(--speed) all ease-in-out;
+ *         }
+ *
+ *           .hover-left .left {
+ *               width: var(--hover-width);
+ *                 }
+ *
+ *                   .hover-left .middle {
+ *                       width: var(--hover-width);
+ *                         }
+ *
+ *                           .hover-left .right {
+ *                               width: var(--other-width);
+ *                                 }
+ *
+ *                                   .hover-left .middle:before .right:before {
+ *                                       z-index: 20;
+ *                                         }
+ *
+ *                                           .hover-middle .middle {
+ *                                               width: 33%;
+ *                                                 }
+ *
+ *                                                   .hover-middle .left {
+ *                                                       width: 34%;
+ *                                                         }
+ *
+ *                                                           .hover-middle .right {
+ *                                                               width: 33%;
+ *                                                                 }
+ *
+ *                                                                   .hover-middle .left:before .right:before {
+ *                                                                       z-index: 20;
+ *                                                                         }
+ *
+ *                                                                           .hover-right .right {
+ *                                                                               width: var(--hover-width);
+ *                                                                                 }
+ *
+ *                                                                                   .hover-right .middle {
+ *                                                                                       width: var(--hover-width);
+ *                                                                                         }
+ *
+ *                                                                                           .hover-right .left {
+ *                                                                                               width: var(--other-width);
+ *                                                                                                 }
+ *
+ *                                                                                                   .hover-right .left:before .middle:before {
+ *                                                                                                       z-index: 20;
+ *                                                                                                         }
+ *                                                                                                           */
 
-.hover-left .left {
-  width: var(--hover-width);
-}
-
-.hover-left .middle {
-  width: var(--hover-width);
-}
-
-.hover-left .right {
-  width: var(--other-width);
-}
-
-.hover-left .middle:before .right:before {
-  z-index: 20;
-}
-
-.hover-middle .middle {
-  width: 33%;
-}
-
-.hover-middle .left {
-  width: 34%;
-}
-
-.hover-middle .right {
-  width: 33%;
-}
-
-.hover-middle .left:before .right:before {
-  z-index: 20;
-}
-
-.hover-right .right {
-  width: var(--hover-width);
-}
-
-.hover-right .middle {
-  width: var(--hover-width);
-}
-
-.hover-right .left {
-  width: var(--other-width);
-}
-
-.hover-right .left:before .middle:before {
-  z-index: 20;
-}
-
-@media(max-width: 800px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .button {
-    width: 12rem;
-  }
 }
 
 @media(max-height: 700px) {

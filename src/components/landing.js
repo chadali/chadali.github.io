@@ -19,18 +19,18 @@ class Landing extends Component {
   render() {
     return (
       <div className={"container " + this.state.activeClass}>
-        <div onMouseEnter={() => this.handleMouse("left","enter")} onMouseLeave={() => this.handleMouse("left","leave")} className="split left">
+        <Link to="/books" onMouseEnter={() => this.handleMouse("left","enter")} onMouseLeave={() => this.handleMouse("left","leave")} className="split left">
           <h1>Books</h1>
-          <Link to="/books" className="button">Read Reviews</Link>
-        </div>
-        <div onMouseEnter={() => this.handleMouse("middle","enter")} onMouseLeave={() => this.handleMouse("middle","leave")} className="split middle">
+          <div className="button">Read Reviews</div>
+        </Link>
+        <Link to="/projects" onMouseEnter={() => this.handleMouse("middle","enter")} onMouseLeave={() => this.handleMouse("middle","leave")} className="split middle">
           <h1>Projects</h1>
-          <Link to="/" className="button">View All</Link>
-        </div>
-        <div onMouseEnter={() => this.handleMouse("right","enter")} onMouseLeave={() => this.handleMouse("right","leave")}  className="split right">
+          <div className="button">View All</div>
+        </Link>
+        <Link to="/" onMouseEnter={() => this.handleMouse("right","enter")} onMouseLeave={() => this.handleMouse("right","leave")}  className="split right">
           <h1>Coming Soon</h1>
-          <Link to="/" className="button">:(</Link>
-        </div>
+          <div className="button">:(</div>
+        </Link>>
       </div>
     );  
   }
