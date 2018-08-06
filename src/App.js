@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Landing from './components/landing.js';
-import { Switch, Route } from 'react-router-dom'
+import Project from './components/project.js';
+import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <Switch>
         <Route exact path='/' component={Landing}/>
         <Route path='/books' component={Landing}/>
+        <Route path='/projects' component={Project}/>
       </Switch>
     );
   }
