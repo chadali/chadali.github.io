@@ -20,15 +20,15 @@ class Landing extends Component {
     return (
       <div className={"container " + this.state.activeClass}>
         <Link to="/books" onMouseEnter={() => this.handleMouse("left","enter")} onMouseLeave={() => this.handleMouse("left","leave")} className="split left">
-          <h1>Books</h1>
+          <h1 className="landing">Books</h1>
           <div className="button">Read Reviews</div>
         </Link>
         <Link to="/projects" onMouseEnter={() => this.handleMouse("middle","enter")} onMouseLeave={() => this.handleMouse("middle","leave")} className="split middle">
-          <h1>Projects</h1>
+          <h1 className="landing">Projects</h1>
           <div className="button">View All</div>
         </Link>
         <Link to="/" onMouseEnter={() => this.handleMouse("right","enter")} onMouseLeave={() => this.handleMouse("right","leave")}  className="split right">
-          <h1>Coming Soon</h1>
+          <h1 className="landing">Coming Soon</h1>
           <div className="button">:(</div>
         </Link>
       </div>

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Tinos');
+
+/* global */
+
+html, body {
+  height: 100%;
+  background: #fcfcfa;
+}
+.hidden {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  -webkit-transition-property: opacity 0;
+  -webkit-transition-duration: 0s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: opacity 0;
+  transition-duration: 0s;
+  transition-timing-function: ease-out;
+  position: absolute;
+}
+.yearProjects.active {
+  visibility: visible; /* shows sub-menu */
+  height: auto;
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+img {
+  height: 30px;
+  width: 30px;
+  padding-right: 2px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -40px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* YearDiv Class */
+
+.yearDiv {
+  border-bottom: 1px grey solid;
+  padding-bottom: 5px;
+  font-family: 'Tinos', serif;
+}
+.yearHeader {
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+}
+.actualYear {
+  font-size: 25px;
+  line-height: 17px;
+}
+.openArrow {
+  position: absolute;
+  margin-left: auto;
+  right: 16px;
+  top: 57%;
+}
+.yearHeader.active .openArrow {
+  transform: translateY(-50%);
+}
+.arrow {
+  transform: translateY(-50%);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.yearSummary {
+
+} 
+
+.yearSummaryTotalProjects {
+  font-style: italic;
+}
+.yearSummaryImages {
+  padding-top: 12px;
+}
+
+.yearDiv.active {
+}
+.yearHeader.active {
+  padding-bottom: 10px;
+  background-color: rgba(0,0,0,0.1);
+}
+.yearHeader.active .arrow {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* ProjectRow Class */
+
+.projectRow {
+}
+
+
+.projectRowTitle {
+  font-size: 25px;
+  font-style: italic;
+  background: #fcfcfa;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.65;
+}
+.hr-text:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: black;
+  background-color: #fcfcfa;
+}
+
+/* Specific Project */
+
+.specificProject {
+  width: 60%;
+  margin: auto;
+  position: relative;
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 800px) {
+  .specificProject {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
+.githubLink {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.description {
+  padding-bottom: 10px;
+}
+
+.projectHeader {
+  font-size: 19px;
+  color: grey;
+}
+.projectDescription {
+}

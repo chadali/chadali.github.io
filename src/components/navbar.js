@@ -28,10 +28,9 @@ class Navbar extends Component {
               <a id="nav-toggle"><span></span></a>
             </div>
             <ul className={"nav-list " + (this.state.mobileToggle ? "active" : "")}>
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">About</a></li>
-              <li><a href="#!">Pricing</a></li>
-              <li><a href="#!">Contact</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/books">Books</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
             </ul>
           </nav>
         </div>

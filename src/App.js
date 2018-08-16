@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Landing from './components/landing.js';
-import Project from './components/project.js';
+import Project from './components/project/projectPage.js';
 import { Switch, Route } from 'react-router-dom';
 
 class App extends Component {
