@@ -5,12 +5,17 @@ class Banner extends Component {
   constructor(props) {
     super(props)
     this.state = { 
+      removeBanner: false,
     }   
+  }
+
+  removeBanner() {
+    this.setState({removeBanner: true});
   }
 
   render() {
     return (
-      <div className={(this.state.removeBanner) ? "hidden at-banner" : "at-banner"}>
+      <div className={(this.state.removeBanner) ? "hide at-banner" : "at-banner"}>
         <div className="at-banner__content">
           <div className="at-banner__text">
             Hey there! I've put additional info, pictures, videos, and key files in every README so check them out!

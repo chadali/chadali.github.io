@@ -106,3 +106,32 @@
 }
 
 
+@keyframes at-banner-slide-out {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(150%);
+  }
+}
+
+
+.at-banner.hide {
+  z-index: 999999;
+  position: fixed;
+  bottom: -1px;
+  right: 0;
+  left: 0;
+  background: #974DF3;
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(-150%);
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  animation: at-banner-slide-out 1.3s ease forwards;
+}
