@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Navbar from '../navbar.js';
 import gucci from './project.js';
 import YearDiv from './yearDiv.js';
-import '../../static/project/styles.css'
+import Banner from './banner.js';
+import '../../static/project/styles.css';
 
 class Project extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ class Project extends Component {
     return (
       <div>
       <Navbar/>
+      <Banner/>
       {returnedYearDivs}
       </div>
     );    
