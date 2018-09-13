@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectRow from './projectRow.js';
 import {returnImage} from './helpers.js';
+import ReactGA from 'react-ga';
 
 class YearDiv extends React.Component {
   constructor(props) {
@@ -19,10 +20,20 @@ class YearDiv extends React.Component {
     return returnArray;
   }
 
-  handleClick() {
+  handleClick(year, state) {
     this.setState((prevState) => ({
       active: !prevState.active
     }));
+
+    if(!state) {
+      ReactGA.ga((tracker) => {
+        ReactGA.event({
+            category: 'ClientID: ' + tracker.get('clientId'),
+            action: 'Opened YearDiv: ' + year
+        });
+      });
+
+    }
   }
 
   getYearSummary(projects) {
@@ -51,7 +62,7 @@ class YearDiv extends React.Component {
       <div className="yearDiv">
 
         {/* Year Header */}
-        <div className={(this.state.active) ? "yearHeader active" : "yearHeader"} onClick={this.handleClick}>
+        <div className={(this.state.active) ? "yearHeader active" : "yearHeader"} onClick={() => this.handleClick(this.props.year, this.state.active)}>
           <div className="openArrow">
             <img className="arrow" src={require('../../static/project/arrow.png')} alt="openIcon"/>
           </div>
