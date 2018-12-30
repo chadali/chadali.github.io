@@ -39,5 +39,5 @@ export function returnImage(name) {
     default:
       break;
   }
-  return <img src={link} alt="icon"/>
+  return <img className="appIcon" src={link} alt="icon"/>
 }

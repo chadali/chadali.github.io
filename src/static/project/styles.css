@@ -28,7 +28,7 @@ html, body {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
-img {
+img.appIcon {
   height: 30px;
   width: 30px;
   padding-right: 2px;

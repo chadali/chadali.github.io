@@ -64,7 +64,7 @@ class YearDiv extends React.Component {
         {/* Year Header */}
         <div className={(this.state.active) ? "yearHeader active" : "yearHeader"} onClick={() => this.handleClick(this.props.year, this.state.active)}>
           <div className="openArrow">
-            <img className="arrow" src={require('../../static/project/arrow.png')} alt="openIcon"/>
+            <img className="arrow appIcon" src={require('../../static/project/arrow.png')} alt="openIcon"/>
           </div>
           <div className="actualYear">
             <b>{this.props.year}</b>
