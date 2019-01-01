@@ -27,7 +27,7 @@ class SpecificProject extends React.Component {
     var index = this.props.index;
     var gitLink = this.props.project.githubLinks[index];
 
-    return <a href={gitLink} target="_blank">{returnImage("github")}</a>
+    return <a href={gitLink} target="_blank" rel="noopener noreferrer">{returnImage("github")}</a>
   }
 
   render() {

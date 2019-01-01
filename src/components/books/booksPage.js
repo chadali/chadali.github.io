@@ -3,15 +3,19 @@ import Book from './book.js';
 import Navbar from '../navbar.js';
 import SpecificBook from './specificBook.js';
 import Loading from '../loading.js';
+import DescriptionOverlay from './descriptionOverlay';
 import '../../static/books/styles.css';
 
 class Books extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ready: false
+      ready: false,
+      overlayBookDescription: "",
+      overlayBookPic: ""
     };
     this.books = null
+    this.openDescription = this.openDescription.bind(this);
   }
 
   async getBooks() {
@@ -45,7 +49,7 @@ class Books extends Component {
   }
 
   booksToComponent(books) {
-    let bookComponents = books.map(x => <SpecificBook key={x.title} book={x}/>);
+    let bookComponents = books.map(x => <span onClick={e => this.openDescription(e,x)} key={x.title}><SpecificBook onClick={() => {console.log('test');}} book={x}/></span>);
     return bookComponents;
   }
 
@@ -54,6 +58,13 @@ class Books extends Component {
     this.getBooks();
   }
 
+  openDescription(e,book) {
+    this.setState({
+      overlayBookDescription: book.description,
+      overlayBookPic: book.title
+    });
+    document.getElementById("myNav").style.height = "100%";
+  }
 
   render() {
     if(!this.state.ready) {
@@ -67,7 +78,11 @@ class Books extends Component {
       return (
         <div className="booksRoot">
           <Navbar/>
-          {this.books}
+          <div className="booksContainer">
+            <h1 className="booksTitle">Book👏Review </h1>
+            {this.books}
+            <DescriptionOverlay bookDescription={this.state.overlayBookDescription} bookPic={this.state.overlayBookPic}/>
+          </div>
         </div>
       )
     }

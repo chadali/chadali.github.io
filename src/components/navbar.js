@@ -25,7 +25,7 @@ class Navbar extends Component {
           </div>
           <nav>
             <div onClick={() => this.toggleMobileNav()} className="nav-mobile">
-              <a id="nav-toggle"><span></span></a>
+              <span id="nav-toggle"><span></span></span>
             </div>
             <ul className={"nav-list " + (this.state.mobileToggle ? "active" : "")}>
               <li><Link to="/">Home</Link></li>

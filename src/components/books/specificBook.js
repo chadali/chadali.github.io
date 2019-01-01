@@ -20,7 +20,7 @@ class SpecificBook extends React.Component {
 
     return (
       <span className="specificBook">
-        <figure className="snip1556" onclick="openNav('neuromancer');">
+        <figure className="snip1556">
           <figcaption>
             <h3>{this.props.book.title}</h3>
           </figcaption><img src={Images['books'][this.props.book.title.trim()]} style={{maxHeight:"300px"}} className="img-rounded img-responsive" alt={alt}/>

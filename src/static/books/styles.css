@@ -1,11 +1,26 @@
 /* Personal */
-
 .booksRoot {
   background-color: #232B2B;
   color: white;
-  height: 100%;
+  min-height: 100%;
+  text-align: center;
 }
 
+.booksContainer {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+#overlayPic {
+  margin-bottom: 10px;
+}
+
+#actualContent {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
 /* Full Screen Overlay Navigation - W3Schools.com */
 
 .overlay {
@@ -22,10 +37,10 @@
 }
 .overlay-content {
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  width: 70%;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .overlay .closebtn {
   position: absolute;
@@ -43,6 +58,7 @@
     right: 35px;
   }
 }
+
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -64,7 +80,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #000000;
   display: inline-block;
-  font-family: 'Oswald', Arial, sans-serif;
+  font-family: 'PT Sans', 'Oswald', Arial, sans-serif;
   font-size: 16px;
   margin: 8px;
   max-width: 310px;
@@ -100,6 +116,7 @@
 }
 .snip1556 h3 {
   font-size: 26px;
+  font-weight: 300;
   position: absolute;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
