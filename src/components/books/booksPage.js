@@ -79,7 +79,7 @@ class Books extends Component {
         <div className="booksRoot">
           <Navbar/>
           <div className="booksContainer">
-            <h1 className="booksTitle">Book👏Review </h1>
+            <h1 className="booksTitle">Book<span role="img" aria-label="Clap Hand">👏</span>Review</h1>
             {this.books}
             <DescriptionOverlay bookDescription={this.state.overlayBookDescription} bookPic={this.state.overlayBookPic}/>
           </div>

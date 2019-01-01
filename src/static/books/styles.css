@@ -20,6 +20,7 @@
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.7;
+  white-space: pre-line;
 }
 /* Full Screen Overlay Navigation - W3Schools.com */
 
@@ -51,7 +52,7 @@
 
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay .closebtn {font-size: 20px}
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -59,15 +60,15 @@
   }
 }
 
-.overlay a {
+.overlay .closebtn {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 60px;
   color: #818181;
   display: block;
   transition: 0.3s;
 }
-.overlay a:hover, .overlay a:focus {
+.overlay .closebtn:hover, .overlay .closebtn:focus {
   color: #f1f1f1;
 }
 

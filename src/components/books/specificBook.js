@@ -9,13 +9,6 @@ class SpecificBook extends React.Component {
 
   render() {
 
-    var description = ""
-    // eslint-disable-next-line
-    this.props.book.description.split("\\n").map( function(string) {
-      description += string;
-      description += " \n";
-    })
-
     var alt = this.props.book.title + " Image";
 
     return (
