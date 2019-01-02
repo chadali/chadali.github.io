@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/swift.03195697.png"
   },
   {
-    "revision": "30d45b53e489dfc16f90",
-    "url": "/static/css/main.75e1264d.chunk.css"
+    "revision": "b5fc706426b21c42ddf3",
+    "url": "/static/css/main.086cc69c.chunk.css"
   },
   {
     "revision": "0ffcdff6d378c1c2cc5a",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/reactjs.f8267b71.png"
   },
   {
-    "revision": "30d45b53e489dfc16f90",
-    "url": "/static/js/main.30d45b53.chunk.js"
+    "revision": "b5fc706426b21c42ddf3",
+    "url": "/static/js/main.b5fc7064.chunk.js"
   },
   {
     "revision": "8363205db16e7c1831917e3b676f0f51",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/media/spinner.8ff93af5.svg"
   },
   {
-    "revision": "90d0e2bce189178b59c74f9656efef44",
+    "revision": "a4a7912d8f9fbc9176a1eebf4ac26c24",
     "url": "/index.html"
   }
 ];

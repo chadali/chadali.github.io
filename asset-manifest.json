@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.75e1264d.chunk.css",
-  "main.js": "/static/js/main.30d45b53.chunk.js",
-  "main.js.map": "/static/js/main.30d45b53.chunk.js.map",
+  "main.css": "/static/css/main.086cc69c.chunk.css",
+  "main.js": "/static/js/main.b5fc7064.chunk.js",
+  "main.js.map": "/static/js/main.b5fc7064.chunk.js.map",
   "static/js/1.0ffcdff6.chunk.js": "/static/js/1.0ffcdff6.chunk.js",
   "static/js/1.0ffcdff6.chunk.js.map": "/static/js/1.0ffcdff6.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -16,8 +16,8 @@
   "static/media/github.svg": "/static/media/github.76d344f0.svg",
   "static/media/Ali: A Life.jpg": "/static/media/Ali: A Life.8254befa.jpg",
   "static/media/Neuromancer.jpg": "/static/media/Neuromancer.ea54796a.jpg",
-  "static/css/main.75e1264d.chunk.css.map": "/static/css/main.75e1264d.chunk.css.map",
+  "static/css/main.086cc69c.chunk.css.map": "/static/css/main.086cc69c.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.13cf318127ac10a200b3d27c640a8c5b.js": "/precache-manifest.13cf318127ac10a200b3d27c640a8c5b.js",
+  "precache-manifest.fb8cd4d1b29359d6b15270a9c215caf0.js": "/precache-manifest.fb8cd4d1b29359d6b15270a9c215caf0.js",
   "service-worker.js": "/service-worker.js"
 }
