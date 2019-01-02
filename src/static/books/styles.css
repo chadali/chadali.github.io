@@ -1,27 +1,3 @@
-/* Personal */
-.booksRoot {
-  background-color: #232B2B;
-  color: white;
-  min-height: 100%;
-  text-align: center;
-}
-
-.booksContainer {
-  width: 70%;
-  text-align: center;
-  margin: auto;
-}
-
-#overlayPic {
-  margin-bottom: 10px;
-}
-
-#actualContent {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  white-space: pre-line;
-}
 /* Full Screen Overlay Navigation - W3Schools.com */
 
 .overlay {
@@ -36,13 +12,7 @@
   overflow-y: auto;
   transition: 0.5s;
 }
-.overlay-content {
-  position: relative;
-  width: 70%;
-  margin-top: 90px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -50,7 +20,7 @@
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 600px) {
   .overlay {overflow-y: auto;}
   .overlay .closebtn {font-size: 20px}
   .overlay .closebtn {
@@ -109,8 +79,8 @@
 }
 .snip1556 figcaption {
   background-color: #333333;
-  bottom: 30px;
-  left: 40px;
+  bottom: 15px;
+  left: 20px;
   position: absolute;
   right: 0;
   top: 0;
@@ -145,4 +115,77 @@
 .snip1556:hover figcaption,
 .snip1556.hover figcaption {
   background-color: #c0392b;
+}
+
+/* Personal */
+.booksRoot {
+  background-color: #232B2B;
+  color: white;
+  min-height: 100%;
+  text-align: center;
+}
+
+.booksContainer {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+#overlayPic {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#actualContent {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  white-space: pre-line;
+}
+
+.overlay-content {
+  position: relative;
+  width: 70%;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.bookImage {
+  max-height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .booksContainer {
+    width: 96%;
+  }
+  .overlay-content {
+    width: 96%;
+  }
+  .bookImage {
+    max-height: 200px;
+  }
+  #actualContent {
+    line-height: 24px;
+  }
+  .overlay .closebtn {
+    top: 0px;
+    right: 20px;
+  }
+  .overlay-content {
+    margin-top: 70px;
+  }
+  .snip1556 h3{
+    display: none; 
+  }
+  .snip1556 {
+    min-width: 150px;
+    max-width: 250px;
+    padding: 10px 10px 0 0;
+  }
+  .snip1556 figcaption {
+    bottom: 5px;
+    left: 5px;
+  }
 }
