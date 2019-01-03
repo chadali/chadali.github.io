@@ -27,7 +27,7 @@ class Landing extends Component {
           <h1 className="landing">Projects</h1>
           <div className="button">View All</div>
         </Link>
-        <Link to="/" onMouseEnter={() => this.handleMouse("right","enter")} onMouseLeave={() => this.handleMouse("right","leave")}  className="split right">
+        <Link to="/movies" onMouseEnter={() => this.handleMouse("right","enter")} onMouseLeave={() => this.handleMouse("right","leave")}  className="split right">
           <h1 className="landing">Movies</h1>
           <div className="button">Read Reviews</div>
         </Link>
