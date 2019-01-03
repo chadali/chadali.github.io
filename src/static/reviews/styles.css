@@ -118,14 +118,14 @@
 }
 
 /* Personal */
-.booksRoot {
+.reviewsRoot {
   background-color: #232B2B;
   color: white;
   min-height: 100%;
   text-align: center;
 }
 
-.booksContainer {
+.reviewsContainer {
   width: 70%;
   text-align: center;
   margin: auto;
@@ -152,18 +152,18 @@
   text-align: left;
 }
 
-.bookImage {
+.reviewImage {
   max-height: 300px;
 }
 
 @media screen and (max-width: 600px) {
-  .booksContainer {
+  .reviewsContainer {
     width: 96%;
   }
   .overlay-content {
     width: 96%;
   }
-  .bookImage {
+  .reviewImage {
     max-height: 200px;
   }
   #actualContent {

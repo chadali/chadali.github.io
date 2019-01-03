@@ -1,7 +1,10 @@
 const images = {
-  books: {
+  book: {
     'Ali: A Life': require('./Ali: A Life.jpg'),
     'Neuromancer': require('./Neuromancer.jpg'),
+  },
+  movie: {
+
   }
 };
 
