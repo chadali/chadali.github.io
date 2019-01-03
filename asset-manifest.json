@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.086cc69c.chunk.css",
-  "main.js": "/static/js/main.b5fc7064.chunk.js",
-  "main.js.map": "/static/js/main.b5fc7064.chunk.js.map",
+  "main.css": "/static/css/main.43cf3d38.chunk.css",
+  "main.js": "/static/js/main.ae06ede0.chunk.js",
+  "main.js.map": "/static/js/main.ae06ede0.chunk.js.map",
   "static/js/1.0ffcdff6.chunk.js": "/static/js/1.0ffcdff6.chunk.js",
   "static/js/1.0ffcdff6.chunk.js.map": "/static/js/1.0ffcdff6.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/spinner.svg": "/static/media/spinner.8ff93af5.svg",
-  "static/media/landing.css": "/static/media/code.7bd1e383.png",
+  "static/media/landing.css": "/static/media/movie.3f462af1.jpg",
   "static/media/reactjs.png": "/static/media/reactjs.f8267b71.png",
   "static/media/swift.png": "/static/media/swift.03195697.png",
   "static/media/python.png": "/static/media/python.8363205d.png",
@@ -16,8 +16,8 @@
   "static/media/github.svg": "/static/media/github.76d344f0.svg",
   "static/media/Ali: A Life.jpg": "/static/media/Ali: A Life.8254befa.jpg",
   "static/media/Neuromancer.jpg": "/static/media/Neuromancer.ea54796a.jpg",
-  "static/css/main.086cc69c.chunk.css.map": "/static/css/main.086cc69c.chunk.css.map",
+  "static/css/main.43cf3d38.chunk.css.map": "/static/css/main.43cf3d38.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.fb8cd4d1b29359d6b15270a9c215caf0.js": "/precache-manifest.fb8cd4d1b29359d6b15270a9c215caf0.js",
+  "precache-manifest.a81a0b131413fade49c66d4ccc90670b.js": "/precache-manifest.a81a0b131413fade49c66d4ccc90670b.js",
   "service-worker.js": "/service-worker.js"
 }

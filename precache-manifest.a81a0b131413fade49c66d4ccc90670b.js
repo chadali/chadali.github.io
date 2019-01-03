@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/swift.03195697.png"
   },
   {
-    "revision": "b5fc706426b21c42ddf3",
-    "url": "/static/css/main.086cc69c.chunk.css"
+    "revision": "ae06ede0bfb0d1bcc6b3",
+    "url": "/static/css/main.43cf3d38.chunk.css"
   },
   {
     "revision": "0ffcdff6d378c1c2cc5a",
@@ -20,20 +20,20 @@ self.__precacheManifest = [
     "url": "/static/media/book.95be5582.jpeg"
   },
   {
-    "revision": "7bd1e3832ef2b5b69195e7ea5ec4a201",
-    "url": "/static/media/code.7bd1e383.png"
-  },
-  {
     "revision": "3f462af1f460d291d930794fdf364767",
     "url": "/static/media/movie.3f462af1.jpg"
+  },
+  {
+    "revision": "7bd1e3832ef2b5b69195e7ea5ec4a201",
+    "url": "/static/media/code.7bd1e383.png"
   },
   {
     "revision": "f8267b71a21ec798c6bdafe8ba90e234",
     "url": "/static/media/reactjs.f8267b71.png"
   },
   {
-    "revision": "b5fc706426b21c42ddf3",
-    "url": "/static/js/main.b5fc7064.chunk.js"
+    "revision": "ae06ede0bfb0d1bcc6b3",
+    "url": "/static/js/main.ae06ede0.chunk.js"
   },
   {
     "revision": "8363205db16e7c1831917e3b676f0f51",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/media/spinner.8ff93af5.svg"
   },
   {
-    "revision": "a4a7912d8f9fbc9176a1eebf4ac26c24",
+    "revision": "4e48b08147cac82b4289f3021d74d111",
     "url": "/index.html"
   }
 ];
