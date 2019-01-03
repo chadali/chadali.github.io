@@ -10,11 +10,11 @@ Personal website that showcases projects and book reviews
 
 ## Key Files
 
-### Books
+### Reviews
 
-* [Books Page Componenet (Highest Level Component)](https://github.com/chadali/chadali.github.io/blob/source/src/components/books/booksPage.js)
-* [Book Component Definition (Lowest Level Component)](https://github.com/chadali/chadali.github.io/blob/source/src/components/books/specificBook.js)
-* [Book Class Definition](https://github.com/chadali/chadali.github.io/blob/source/src/components/books/book.js)
+* [Reviews Page Componenet (Highest Level Component)](https://github.com/chadali/chadali.github.io/blob/source/src/components/reviews/reviewsPage.js)
+* [Review Component Definition (Lowest Level Component)](https://github.com/chadali/chadali.github.io/blob/source/src/components/reviews/specificReview.js)
+* [Review Class Definition](https://github.com/chadali/chadali.github.io/blob/source/src/components/reviews/review.js)
 
 ### Project
 
@@ -27,3 +27,8 @@ Personal website that showcases projects and book reviews
 * [Landing.js](https://github.com/chadali/chadali.github.io/blob/source/src/components/landing.js)
 
 
+## TODO
+
+* Add latest books/movies
+* Update database to accurate year values (year of release)
+* Sort functionality?
