@@ -4,7 +4,8 @@ const images = {
     'Neuromancer': require('./Neuromancer.jpg'),
   },
   movie: {
-
+    'Dark Knight Trilogy': require('./Dark Knight Trilogy.jpg'),
+    'Inception': require('./Inception.jpg'),
   }
 };
 
