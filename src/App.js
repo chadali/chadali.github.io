@@ -17,8 +17,8 @@ class App extends Component {
       ReactGA.initialize('UA-125104725-1'),
       <Switch>
         <Route exact path='/' component={Landing}/>
-        <Route path='/books' component={() => <Reviews type={"book"}/>}/>
-        <Route path='/movies' component={() => <Reviews type={"movie"}/>}/>
+        <Route path='/books' render={() => <Reviews type="book"/>}/>
+        <Route path='/movies' render={() => <Reviews type={"movie"}/>}/>
         <Route onupdate={this.fireTracking()} path='/projects' component={Project}/>
       </Switch>
     );
