@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/python.8363205d.png"
   },
   {
-    "revision": "0ab3db763dab49e198ad",
-    "url": "/static/css/main.d6d67d4f.chunk.css"
+    "revision": "51ada9994d62b57bd669",
+    "url": "/static/css/main.8c8d5f07.chunk.css"
   },
   {
     "revision": "141f7e8373d6d16923bc",
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/static/media/book.95be5582.jpeg"
   },
   {
-    "revision": "3f462af1f460d291d930794fdf364767",
-    "url": "/static/media/movie.3f462af1.jpg"
-  },
-  {
     "revision": "7bd1e3832ef2b5b69195e7ea5ec4a201",
     "url": "/static/media/code.7bd1e383.png"
+  },
+  {
+    "revision": "3f462af1f460d291d930794fdf364767",
+    "url": "/static/media/movie.3f462af1.jpg"
   },
   {
     "revision": "f8267b71a21ec798c6bdafe8ba90e234",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/swift.03195697.png"
   },
   {
-    "revision": "0ab3db763dab49e198ad",
-    "url": "/static/js/main.0ab3db76.chunk.js"
+    "revision": "51ada9994d62b57bd669",
+    "url": "/static/js/main.51ada999.chunk.js"
   },
   {
     "revision": "e30ffe88468133b594a39ad56bea99bf",
@@ -52,27 +52,27 @@ self.__precacheManifest = [
     "url": "/static/media/github.76d344f0.svg"
   },
   {
-    "revision": "8254befa7a62d58a66edb50c09fa18fb",
-    "url": "/static/media/Ali: A Life.8254befa.jpg"
+    "revision": "626f1222e5e8bd6d575132f0fe493896",
+    "url": "/static/media/Ali: A Life.626f1222.jpg"
   },
   {
     "revision": "ea54796ae2c58b8d5fd170efe83fe45d",
     "url": "/static/media/Neuromancer.ea54796a.jpg"
   },
   {
-    "revision": "9a64aead20aca5614d361c7f1039b487",
-    "url": "/static/media/Dark Knight Trilogy.9a64aead.jpg"
+    "revision": "570927034bada9af77926504d1b8996c",
+    "url": "/static/media/Dark Knight Trilogy.57092703.jpg"
   },
   {
-    "revision": "2af598f8ba6cde9f052cc8d47054cadf",
-    "url": "/static/media/Inception.2af598f8.jpg"
+    "revision": "ba0442ee869330f3bdb3b587b1a7c1c4",
+    "url": "/static/media/Inception.ba0442ee.jpg"
   },
   {
     "revision": "8ff93af5179684da288d34f33eb48dae",
     "url": "/static/media/spinner.8ff93af5.svg"
   },
   {
-    "revision": "a020d5a8b3e0d20089e3010cadd01774",
+    "revision": "aa206b2d96853ffe78ce49ed0fc2f928",
     "url": "/index.html"
   }
 ];
