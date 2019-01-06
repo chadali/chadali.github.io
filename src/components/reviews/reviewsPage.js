@@ -53,6 +53,10 @@ class Reviews extends Component {
     return reviewComponents;
   }
 
+  componentDidMount() {
+    this.getReviews(this.props.type === "book" ? "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ639gx3DtWge7UOlXW0Frt08fsj2u4SaeWdQdCrh7XaYZnNlaEXBWh4QZ_u0hFTrTC-fmJGA7OoUrG/pub?gid=0&single=true&output=tsv" : "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRoDum8RqANxVyF7kRG1X0Qs3ZwolilKMbeAywmG0uxT1V_LNELFmJDxZuE0N2osR0CceBQr9S-nqV/pub?gid=0&single=true&output=tsv");
+  }
+
   componentDidUpdate(prevProps) {
     if (this.props.type !== prevProps.type) {
       this.getReviews(this.props.type === "book" ? "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ639gx3DtWge7UOlXW0Frt08fsj2u4SaeWdQdCrh7XaYZnNlaEXBWh4QZ_u0hFTrTC-fmJGA7OoUrG/pub?gid=0&single=true&output=tsv" : "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRoDum8RqANxVyF7kRG1X0Qs3ZwolilKMbeAywmG0uxT1V_LNELFmJDxZuE0N2osR0CceBQr9S-nqV/pub?gid=0&single=true&output=tsv");
