@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/python.8363205d.png"
   },
   {
-    "revision": "51ada9994d62b57bd669",
-    "url": "/static/css/main.8c8d5f07.chunk.css"
+    "revision": "aa65eefce14a608b927c",
+    "url": "/static/css/main.e7350ac2.chunk.css"
   },
   {
     "revision": "141f7e8373d6d16923bc",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/swift.03195697.png"
   },
   {
-    "revision": "51ada9994d62b57bd669",
-    "url": "/static/js/main.51ada999.chunk.js"
+    "revision": "aa65eefce14a608b927c",
+    "url": "/static/js/main.aa65eefc.chunk.js"
   },
   {
     "revision": "e30ffe88468133b594a39ad56bea99bf",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/spinner.8ff93af5.svg"
   },
   {
-    "revision": "aa206b2d96853ffe78ce49ed0fc2f928",
+    "revision": "144e3dc9722e47057dd844633551a316",
     "url": "/index.html"
   }
 ];

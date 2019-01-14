@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.8c8d5f07.chunk.css",
-  "main.js": "/static/js/main.51ada999.chunk.js",
-  "main.js.map": "/static/js/main.51ada999.chunk.js.map",
+  "main.css": "/static/css/main.e7350ac2.chunk.css",
+  "main.js": "/static/js/main.aa65eefc.chunk.js",
+  "main.js.map": "/static/js/main.aa65eefc.chunk.js.map",
   "static/js/1.141f7e83.chunk.js": "/static/js/1.141f7e83.chunk.js",
   "static/js/1.141f7e83.chunk.js.map": "/static/js/1.141f7e83.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -18,8 +18,8 @@
   "static/media/Neuromancer.jpg": "/static/media/Neuromancer.ea54796a.jpg",
   "static/media/Dark Knight Trilogy.jpg": "/static/media/Dark Knight Trilogy.57092703.jpg",
   "static/media/spinner.svg": "/static/media/spinner.8ff93af5.svg",
-  "static/css/main.8c8d5f07.chunk.css.map": "/static/css/main.8c8d5f07.chunk.css.map",
+  "static/css/main.e7350ac2.chunk.css.map": "/static/css/main.e7350ac2.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.2097a6b7a1a79343d4df28a0bdc68b9d.js": "/precache-manifest.2097a6b7a1a79343d4df28a0bdc68b9d.js",
+  "precache-manifest.faed74149906994c2b006358bdd34c01.js": "/precache-manifest.faed74149906994c2b006358bdd34c01.js",
   "service-worker.js": "/service-worker.js"
 }
