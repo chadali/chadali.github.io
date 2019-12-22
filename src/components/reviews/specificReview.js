@@ -1,5 +1,4 @@
 import React from 'react';
-import Images from '../../static/img/images';
 
 class SpecificReview extends React.Component {
   constructor(props) {
@@ -16,7 +15,7 @@ class SpecificReview extends React.Component {
         <figure className="snip1556">
           <figcaption>
             <h3>{this.props.review.title}</h3>
-          </figcaption><img src={Images[this.props.type][this.props.review.title.trim()]} className="reviewImage img-rounded img-responsive" alt={alt}/>
+          </figcaption><img src={this.props.review.image} className="reviewImage img-rounded img-responsive" alt={alt}/>
         </figure>
 
       </span>   

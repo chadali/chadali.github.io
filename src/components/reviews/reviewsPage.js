@@ -5,6 +5,7 @@ import SpecificReview from './specificReview.js';
 import Loading from '../loading.js';
 import DescriptionOverlay from './descriptionOverlay';
 import '../../static/reviews/styles.css';
+import db from '../../Firebase.js';
 
 class Reviews extends Component {
   constructor(props) {
@@ -12,61 +13,47 @@ class Reviews extends Component {
     this.state = {
       ready: false,
       overlayReviewDescription: "",
-      overlayReviewPic: ""
+      overlayReviewImage: "",
+      overlayReviewTitle: ""
     };
     this.reviews = null
     this.openDescription = this.openDescription.bind(this);
   }
 
-  async getReviews(url) {
-    try {
-      let response = await fetch(url);
-      let responseText = await response.text();
-      let formattedReviews = await this.formatData(responseText);
-      let sortedReviews = await this.sortReviews(formattedReviews);
-      let reviews = await this.reviewsToComponent(sortedReviews);
-      console.log(reviews);
+  async getReviews() {
+    let reviews = [];
+    db.collection(this.props.type).get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        var data = doc.data();
+        reviews.push(new Review(data.title, data.year, data.rating, data.review, data.image));
+      });
+
+      reviews.sort(function(a,b) {
+        return b.year - a.year;
+      }); 
+
+      reviews = reviews.map(x => <span onClick={e => this.openDescription(e,x)} key={x.title}><SpecificReview onClick={() => {console.log('test');}} review={x} type={this.props.type}/></span>);
+
       this.reviews = reviews;
       this.setState({ready: true});
-    } catch(error) {
-      console.error(error);
-    }
-  }
-
-  formatData(responseText) {
-    let unorganizedArr = responseText.split('\n');
-    let organizedArr = [];
-    for(var i=0; i<unorganizedArr.length; i+=4) {
-      organizedArr.push(new Review(unorganizedArr[i],parseInt(unorganizedArr[i+1], 10),parseInt(unorganizedArr[i+2], 10),unorganizedArr[i+3])); 
-    }
-    return organizedArr;
-  }
-
-  sortReviews(reviews) {
-    return reviews.sort(function(a, b) {
-      return b.year - a.year;
     });
   }
 
-  reviewsToComponent(reviews) {
-    let reviewComponents = reviews.map(x => <span onClick={e => this.openDescription(e,x)} key={x.title}><SpecificReview onClick={() => {console.log('test');}} review={x} type={this.props.type}/></span>);
-    return reviewComponents;
-  }
-
   componentDidMount() {
-    this.getReviews(this.props.type === "book" ? "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ639gx3DtWge7UOlXW0Frt08fsj2u4SaeWdQdCrh7XaYZnNlaEXBWh4QZ_u0hFTrTC-fmJGA7OoUrG/pub?gid=0&single=true&output=tsv" : "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRoDum8RqANxVyF7kRG1X0Qs3ZwolilKMbeAywmG0uxT1V_LNELFmJDxZuE0N2osR0CceBQr9S-nqV/pub?gid=0&single=true&output=tsv");
+    this.getReviews();
   }
 
   componentDidUpdate(prevProps) {
     if (this.props.type !== prevProps.type) {
-      this.getReviews(this.props.type === "book" ? "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ639gx3DtWge7UOlXW0Frt08fsj2u4SaeWdQdCrh7XaYZnNlaEXBWh4QZ_u0hFTrTC-fmJGA7OoUrG/pub?gid=0&single=true&output=tsv" : "https://docs.google.com/spreadsheets/d/e/2PACX-1vRRoDum8RqANxVyF7kRG1X0Qs3ZwolilKMbeAywmG0uxT1V_LNELFmJDxZuE0N2osR0CceBQr9S-nqV/pub?gid=0&single=true&output=tsv");
+      this.getReviews();
     }
   }
 
   openDescription(e,review) {
     this.setState({
       overlayReviewDescription: review.description,
-      overlayReviewPic: review.title
+      overlayReviewTitle: review.title,
+      overlayReviewImage: review.image,
     });
     document.getElementById("myNav").style.height = "100%";
   }
@@ -84,9 +71,9 @@ class Reviews extends Component {
         <div className="reviewsRoot">
           <Navbar/>
           <div className="reviewsContainer">
-            <h1 className="reviewsTitle">{this.props.type[0].toUpperCase() + this.props.type.slice(1)}<span role="img" aria-label="Clap Hand">👏</span>Review</h1>
+            <h1 className="reviewsTitle">{this.props.type[0].toUpperCase() + this.props.type.slice(1, -1)}<span role="img" aria-label="Clap Hand">👏</span>Review</h1>
             {this.reviews}
-            <DescriptionOverlay type={this.props.type} reviewDescription={this.state.overlayReviewDescription} reviewPic={this.state.overlayReviewPic}/>
+            <DescriptionOverlay type={this.props.type} reviewTitle={this.state.overlayReviewTitle} reviewDescription={this.state.overlayReviewDescription} reviewImage={this.state.overlayReviewImage}/>
           </div>
         </div>
       )
