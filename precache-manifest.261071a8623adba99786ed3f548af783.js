@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "8363205db16e7c1831917e3b676f0f51",
-    "url": "/static/media/python.8363205d.png"
+    "revision": "f8267b71a21ec798c6bdafe8ba90e234",
+    "url": "/static/media/reactjs.f8267b71.png"
   },
   {
-    "revision": "aa65eefce14a608b927c",
-    "url": "/static/css/main.e7350ac2.chunk.css"
+    "revision": "538e9634ed7b0a4a2e90",
+    "url": "/static/css/main.acd0cbfe.chunk.css"
   },
   {
-    "revision": "141f7e8373d6d16923bc",
-    "url": "/static/js/1.141f7e83.chunk.js"
+    "revision": "3ae8000988a493f4a0ec",
+    "url": "/static/js/1.3ae80009.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -28,16 +28,16 @@ self.__precacheManifest = [
     "url": "/static/media/movie.3f462af1.jpg"
   },
   {
-    "revision": "f8267b71a21ec798c6bdafe8ba90e234",
-    "url": "/static/media/reactjs.f8267b71.png"
+    "revision": "538e9634ed7b0a4a2e90",
+    "url": "/static/js/main.538e9634.chunk.js"
   },
   {
     "revision": "03195697b11eafb7a42ae6e1b0ef262b",
     "url": "/static/media/swift.03195697.png"
   },
   {
-    "revision": "aa65eefce14a608b927c",
-    "url": "/static/js/main.aa65eefc.chunk.js"
+    "revision": "8363205db16e7c1831917e3b676f0f51",
+    "url": "/static/media/python.8363205d.png"
   },
   {
     "revision": "e30ffe88468133b594a39ad56bea99bf",
@@ -52,27 +52,11 @@ self.__precacheManifest = [
     "url": "/static/media/github.76d344f0.svg"
   },
   {
-    "revision": "626f1222e5e8bd6d575132f0fe493896",
-    "url": "/static/media/Ali: A Life.626f1222.jpg"
-  },
-  {
-    "revision": "ea54796ae2c58b8d5fd170efe83fe45d",
-    "url": "/static/media/Neuromancer.ea54796a.jpg"
-  },
-  {
-    "revision": "570927034bada9af77926504d1b8996c",
-    "url": "/static/media/Dark Knight Trilogy.57092703.jpg"
-  },
-  {
-    "revision": "ba0442ee869330f3bdb3b587b1a7c1c4",
-    "url": "/static/media/Inception.ba0442ee.jpg"
-  },
-  {
     "revision": "8ff93af5179684da288d34f33eb48dae",
     "url": "/static/media/spinner.8ff93af5.svg"
   },
   {
-    "revision": "144e3dc9722e47057dd844633551a316",
+    "revision": "40b8c930f8ff7c57151dbe9030a777cc",
     "url": "/index.html"
   }
 ];
