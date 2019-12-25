@@ -78,7 +78,7 @@
   vertical-align: top;
 }
 .snip1556 figcaption {
-  background-color: #333333;
+  background-color: #111;
   bottom: 15px;
   left: 20px;
   position: absolute;
@@ -137,9 +137,10 @@
 }
 
 #actualContent {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 29px;
+  font-family: georgia,'times new roman',times,serif;
+  font-size: 1.125rem;
+  color: #ccc;
+  line-height: 1.5625rem;
   white-space: pre-line;
 }
 

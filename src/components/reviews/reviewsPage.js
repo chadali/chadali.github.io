@@ -5,7 +5,8 @@ import SpecificReview from './specificReview.js';
 import Loading from '../loading.js';
 import DescriptionOverlay from './descriptionOverlay';
 import '../../static/reviews/styles.css';
-import db from '../../Firebase.js';
+// eslint-disable-next-line
+import {db, storage} from '../../Firebase.js';
 
 class Reviews extends Component {
   constructor(props) {
