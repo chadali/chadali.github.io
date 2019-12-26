@@ -1,6 +1,7 @@
 const firebase = require('firebase/app'); 
 require("firebase/firestore");
 require("firebase/storage");
+require("firebase/auth");
 
 firebase.initializeApp({
   apiKey: 'AIzaSyArq7L5gIfHSwP21QBoHceRDPYU3YI-MXY',
@@ -11,8 +12,10 @@ firebase.initializeApp({
 
 let db = firebase.firestore();
 let storage = firebase.storage();
+let auth = firebase.auth();
 
 export {
   db, 
-  storage
+  storage,
+  auth
 }
