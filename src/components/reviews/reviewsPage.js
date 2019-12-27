@@ -19,7 +19,8 @@ class Reviews extends Component {
       overlayReviewTitle: "",
       showPopup: false
     };
-    this.reviews = null
+    this.reviews = null;
+    this.data = null;
     this.openDescription = this.openDescription.bind(this);
   }
 
@@ -31,11 +32,13 @@ class Reviews extends Component {
         reviews.push(new Review(data.title, data.year, data.rating, data.review, data.image));
       });
 
+      this.data = Array.from(reviews);
+
       reviews.sort(function(a,b) {
         return b.year - a.year;
       }); 
 
-      reviews = reviews.map(x => <span onClick={e => this.openDescription(e,x)} key={x.title}><SpecificReview onClick={() => {console.log('test');}} review={x} type={this.props.type}/></span>);
+      reviews = reviews.map(x => <span onClick={e => this.openDescription(e,x)} key={x.title}><SpecificReview review={x} type={this.props.type}/></span>);
 
       this.reviews = reviews;
       this.setState({ready: true});
@@ -67,34 +70,38 @@ class Reviews extends Component {
     }));
   }
 
-  submitReview(data) {
-    console.log(data);
-    auth.signInWithEmailAndPassword(data.email, data.password).catch(function(error) {
+  submissionUpdate(update) {
+    document.getElementById("reviewDescription").value = update + "\n\n\n" + document.getElementById("reviewDescription").value;
+  }
+  
+  async submitReview(data) {
+    await auth.signOut();
+
+    await auth.signInWithEmailAndPassword(data.email, data.password).catch((error) => {
+      console.log(error);
       var errorCode = error.code;
       var errorMessage = error.message;
-      document.getElementById("reviewText").value = errorCode + '\n' + errorMessage + "\n\n\n" + document.getElementById("reviewText").value;
+      this.submissionUpdate(errorCode + '\n' + errorMessage);
       return;
     });
 
     console.log("trying to save now");
 
-    db.collection(this.props.type).doc(data.title).set({
+    await db.collection(this.props.type).doc(data.title).set({
       title: data.title,
       image: data.image,
       rating: parseInt(data.rating), 
-      review: data.review,
+      review: data.description,
       year: parseInt(data.year)
     })
-    .then(function() {
-      document.getElementById("reviewText").value = "Successfully Written \n\n\n" + document.getElementById("reviewText").value; 
+    .then(() => {
       console.log("successfully written");
+      this.submissionUpdate("Successfully Written");
     })
-    .catch(function(error) {
-      document.getElementById("reviewText").value = error + "\n\n\n" + document.getElementById("reviewText").value;
+    .catch((error) => {
       console.log(error);
+      this.submissionUpdate(error);
     });
-
-    auth.signOut();
   }
 
   render() {
@@ -118,7 +125,7 @@ class Reviews extends Component {
             <button onClick={this.togglePopup.bind(this)} className="float"/>
             <i onClick={this.togglePopup.bind(this)} className="fa fa-plus my-float"></i>
 
-            {this.state.showPopup ? <Popup text='Add Review' submitNewReview={this.submitReview.bind(this)} closePopup={this.togglePopup.bind(this)}/> : null }
+            {this.state.showPopup ? <Popup text='Add Review' data={this.data} submitNewReview={this.submitReview.bind(this)} closePopup={this.togglePopup.bind(this)}/> : null }
           </div>
         </div>
       )

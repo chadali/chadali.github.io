@@ -31,10 +31,12 @@ class Project extends Component {
   render() {
     var returnedYearDivs = this.buildYearDivs();
     return (
-      <div>
-      <Navbar/>
-      <Banner/>
-      {returnedYearDivs}
+      <div className="projectPageRoot">
+        <Navbar/>
+        <Banner/>
+        <div className="projectsDiv">
+          {returnedYearDivs}
+        </div>
       </div>
     );    
   }
