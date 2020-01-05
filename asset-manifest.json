@@ -1,12 +1,12 @@
 {
-  "main.css": "/static/css/main.7c683e91.chunk.css",
-  "main.js": "/static/js/main.224079bc.chunk.js",
-  "main.js.map": "/static/js/main.224079bc.chunk.js.map",
+  "main.css": "/static/css/main.c6ae75bb.chunk.css",
+  "main.js": "/static/js/main.cd1010fe.chunk.js",
+  "main.js.map": "/static/js/main.cd1010fe.chunk.js.map",
   "static/js/1.14ed1eca.chunk.js": "/static/js/1.14ed1eca.chunk.js",
   "static/js/1.14ed1eca.chunk.js.map": "/static/js/1.14ed1eca.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/landing.css": "/static/media/book.95be5582.jpeg",
+  "static/media/landing.css": "/static/media/code.7bd1e383.png",
   "static/media/reactjs.png": "/static/media/reactjs.f8267b71.png",
   "static/media/swift.png": "/static/media/swift.03195697.png",
   "static/media/python.png": "/static/media/python.8363205d.png",
@@ -14,8 +14,8 @@
   "static/media/websocket.svg": "/static/media/websocket.3e65df6a.svg",
   "static/media/github.svg": "/static/media/github.76d344f0.svg",
   "static/media/spinner.svg": "/static/media/spinner.8ff93af5.svg",
-  "static/css/main.7c683e91.chunk.css.map": "/static/css/main.7c683e91.chunk.css.map",
+  "static/css/main.c6ae75bb.chunk.css.map": "/static/css/main.c6ae75bb.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.0c0a5e6549ab01bc7cc102776a511834.js": "/precache-manifest.0c0a5e6549ab01bc7cc102776a511834.js",
+  "precache-manifest.b4d51ab46a7336fb4e9bcf424d051334.js": "/precache-manifest.b4d51ab46a7336fb4e9bcf424d051334.js",
   "service-worker.js": "/service-worker.js"
 }
