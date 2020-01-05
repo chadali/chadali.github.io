@@ -78,6 +78,7 @@
   vertical-align: top;
 }
 .snip1556 figcaption {
+  overflow: hidden;
   background-color: #111;
   bottom: 15px;
   left: 20px;
