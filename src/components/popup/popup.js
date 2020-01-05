@@ -46,7 +46,7 @@ class Popup extends React.Component {
           <br/>
           Email: <input type="text" name="email" id="reviewEmail" />
           <br/>
-          Password: <input type="text" name="password" id="reviewPassword" />
+          Password: <input type="password" name="password" id="reviewPassword" />
           <br/>
           <br/>
           <button onClick={() => {this.props.submitNewReview(this.packageData())}}>submit</button>
